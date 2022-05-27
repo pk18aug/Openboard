@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+            *{
+                    /*border: 1px solid black;*/
+                    width: 400px;
+    
+            }
+
+            .red{
+                background-color: lightpink;
+               /* border: solid 1px black;*/
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+          
+            .blue{
+                background-color: lightblue;
+               /* border: solid 1px black;*/
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                
+
+            }
+            .green{
+                background-color: lightgreen;
+               /* border: solid 1px black;*/
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+             /*div{
+
+            border :1px solid black; 
+                
+           }*/
+            
+           /* html{
+                border: solid salmon;
+                
+
+            }*/
+        .outer{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .color-changer{
+
+            border: 1px solid gray ;
+            height: 100px;
+            width: 100px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+<div class="outer">
+
+
+    <div class="red"> </div>
+    <div class= "green"> </div>
+    <div class="blue"> </div>
+    
+    </div>
+    <div class="color-changer"></div>
+    
+    <script>
+
+        let colorArea  = document.querySelector(".color-changer");
+    
+
+        let redcolor = document.querySelector(".red");
+        
+        let bluecolor = document.querySelector(".blue");
+        
+        let greencolor = document.querySelector(".green");
+
+        redcolor.addEventListener("click",function(){
+            colorArea.style.backgroundColor = "lightpink";
+        })
+        
+        greencolor.addEventListener("click",function(){
+colorArea.style.backgroundColor = "lightgreen";   
+})
+
+bluecolor.addEventListener("click",function(){
+colorArea.style.backgroundColor = "lightblue";
+})
+    </script>
+</body>
+</html>

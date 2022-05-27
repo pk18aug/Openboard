@@ -1,0 +1,150 @@
+
+
+.size-box{
+
+height: 30px;
+width: 150px;
+border: 1px solid lightgrey;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+display: none; /*to hide the element */
+}
+
+.size{
+background-color: slategray;
+border-radius: 50%;
+
+}
+.size1{
+height: 8px;
+width: 8px;
+
+}
+.size2{
+height: 12px;
+width: 12px;
+
+}
+.size3{
+height: 16px;
+width: 16px;
+
+}
+.size4{
+height: 20px;
+width: 20px;
+
+}
+
+.safa-duotone{
+
+    size: 50px;
+    background-color: solid lightgoldenrodyellow;
+}
+
+.toolbar{
+    border: 2px solid  black;
+    display: flex;
+    width:70vw;
+    margin: 0 auto;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.tool{
+
+    /*border: 1px solid black;*/
+    height: 50px;
+}
+.tool-img{
+    height: 50px;
+    
+}
+.color{
+        height: 40px;
+        background-color: blueviolet;
+        width: 40px;
+        border-radius: 50%;
+
+        
+}
+.red{
+    background-color: lightpink;
+}
+.blue{
+    background-color: lightblue;
+}
+.green{
+    background-color: lightgreen;
+}
+.color-container{
+
+    border: 1px solid gray; 
+    display: flex;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fas {
+            font-size: 3rem;
+    }
+    
+    .fab {
+        font-size: 3rem;
+       
+       
+}
+
+
+    .close{
+    
+        height: 15px;
+        width: 15px;
+        background-color: coral;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .sticky {
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        height: 175px;
+        width: 169px;
+        
+        
+        
+    }
+    .textarea{
+    
+    
+        outline: none;
+        width: 98%;
+        border: none;
+        height: 83%;
+        border-top: 2px solid gray;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .navbar{
+    
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 169px;
+        display: flex;
+        height: 25px;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .minimize{
+    
+    height: 15px;
+    width: 15px;
+    background-color: black ;
+    border-radius: 50%;
+    margin-right: 5px;
+    }
+    
+    
+    
+    

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+.size-box{
+
+height: 30px;
+width: 150px;
+border: 1px solid lightgrey;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+display: none; /*to hide the element */
+}
+
+.size{
+background-color: slategray;
+border-radius: 50%;
+
+}
+.size1{
+height: 8px;
+width: 8px;
+
+}
+.size2{
+height: 12px;
+width: 12px;
+
+}
+.size3{
+height: 16px;
+width: 16px;
+
+}
+.size4{
+height: 20px;
+width: 20px;
+
+}
+
+.safa-duotone{
+
+    size: 50px;
+    background-color: solid lightgoldenrodyellow;
+}
+
+.toolbar{
+    border: 2px solid  black;
+    display: flex;
+    width:70vw;
+    margin: 0 auto;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.tool{
+
+    /*border: 1px solid black;*/
+    height: 50px;
+}
+.tool-img{
+    height: 50px;
+    
+}
+.color{
+        height: 40px;
+        background-color: blueviolet;
+        width: 40px;
+        border-radius: 50%;
+
+        
+}
+.red{
+    background-color: lightpink;
+}
+.blue{
+    background-color: lightblue;
+}
+.green{
+    background-color: lightgreen;
+}
+.color-container{
+
+    border: 1px solid gray; 
+    display: flex;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fas {
+            font-size: 3rem;
+    }
+    </style>
+    
+<div class="toolbar">
+
+<div class="tool" id="pencil">
+    <img src="./icon/pencil.svg"  alt=""
+    class="tool-img"
+    
+    >
+    <div class="size-box">
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+    </div>
+</div>
+
+
+<div class="tool" id="eraser"
+>
+
+    <img src="./icon/eraser.svg" alt=""
+    class="tool-img"
+    >
+
+    <div class="size-box">
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+    </div>
+</div>
+
+
+
+    <div class="tool" id="glassrect"
+    >
+    
+    <i class="fas fa-square"></i>
+        <div class="size-box">
+            <div class="size1 size"></div>
+            <div class="size2 size"></div>
+            <div class="size3 size"></div>
+            <div class="size4 size"></div>
+        </div>
+
+    </div>
+
+
+
+<div class="tool" id="Download">
+
+    <img src="./icon/Download.svg" alt=""
+    class="tool-img"
+    >
+    <div class="size-box">
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+    </div>
+
+</div>
+
+
+<div class="color-container">
+<div class="color red"></div>
+<div class="color blue"></div>
+<div class="color green"></div>
+
+</div>
+
+<script>
+
+    let pencil = document.querySelector("#pencil");
+    let eraser = document.querySelector("#eraser");
+    let glassrect = document.querySelector("#glassrect");
+    let Download = document.querySelector("#Download");
+    let option = document.querySelectorAll(".size-box");
+
+    let Dsizer = "pencil";
+    pencil.addEventListener("click" , function(e){
+
+
+            if(Dsizer=="pencil"){
+
+                option[0].style.display = "flex";
+            }else {
+                
+   for(let i=0; i<option.length;i++){
+    option[i].style.display = "none";
+   }
+   let Dsizer = "pencil";     
+            }   
+           
+
+    })
+    
+    eraser.addEventListener("click" , function(e){
+
+if(Dsizer=="eraser"){
+
+    option[1].style.display = "flex";
+    
+}else{
+   
+   Dsizer = "eraser";
+   eraser.style.border = " 1px solid black";
+   for(let i=0; i<option.length;i++){
+       option[i].style.display = "none";
+   }
+        
+}
+
+})
+
+
+glassrect.addEventListener("click" , function(e){
+
+if(Dsizer=="glassrect"){
+
+    option[2].style.display="flex";
+}else{
+   
+   Dsizer = "glassrect";
+   glassrect.style.border = " 1px solid black";
+   for(let i=0; i<option.length;i++){
+       option[i].style.display = "none";
+   }
+        
+}
+
+})
+Download.addEventListener("click" , function(e){
+
+if(Dsizer=="Download"){
+
+    option[3].style.display = "flex";
+}else{
+   
+   Dsizer = "Download";
+   Download.style.border = " 1px solid black";
+   for(let i=0; i<option.length;i++){
+       option[i].style.display = "none";
+   }
+        
+}
+
+})
+
+
+</script>
+</div>
+
+
+</body>
+</html>

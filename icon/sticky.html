@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.close{
+
+    height: 15px;
+    width: 15px;
+    background-color: coral;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.sticky {
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    height: 175px;
+    width: 169px;
+    
+    
+    
+}
+.textarea{
+
+
+    outline: none;
+    width: 98%;
+    border: none;
+    height: 83%;
+    border-top: 2px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar{
+
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 169px;
+    display: flex;
+    height: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.minimize{
+
+height: 15px;
+width: 15px;
+background-color: black ;
+border-radius: 50%;
+margin-right: 5px;
+}
+
+
+
+</style>
+-- <body>
+    <h1> Sticky Example </h1>
+    <!-- <div class="sticky">
+        
+        <div class="navbar">
+        <div class="close"></div>
+        <div class="minimize"></div>
+            </div> -->
+        <!-- <textarea name="" class="textarea"></textarea> -->
+
+
+    <!-- </div>  -->
+
+    <button> click </button>
+    <script>
+let btn = document.querySelector("button");
+let bdy = document.querySelector("body");
+btn.addEventListener("click", function(e){
+    let sticky = document.createElement("div");
+    sticky.setAttribute("class","sticky");
+    sticky.innerHTML= `<div class="sticky">
+        
+        <div class="navbar">
+        <div class="close"></div>
+        <div class="minimize"></div>
+            </div>
+        <textarea name="" class="textarea"></textarea>`;
+bdy.appendChild(sticky);
+
+let minimize = document.querySelector(".minimize");
+let textarea = document.querySelector("textarea");
+let close = document.querySelector(".close");
+isclose = false;
+minimize.addEventListener("click", function(e){
+if(isclose==false){
+
+    textarea.style.display = "none";
+
+}else {
+    textarea.style.display = "block";
+}
+isclose= !isclose;
+
+
+
+
+
+})
+close.addEventListener("click", function(e){
+
+sticky.remove();
+})
+    
+
+
+})
+
+    </script>
+</body>
+</html>
